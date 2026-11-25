@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fffdf8" />
+    <meta
+      name="description"
+      content="Meet Maison Bloom: feel-good daily skincare made for your everyday glow."
+    />
+    <title>Maison Bloom — Your daily dose of glow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["DM Sans", "sans-serif"],
+              display: ["BBH Bogle", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-[#fffdf8] font-sans text-[#342a28] antialiased">
+    <div class="bg-[#ffcb56] px-4 py-2 text-center text-[11px] font-semibold tracking-[0.12em] sm:text-xs">
+      A LITTLE SUNSHINE, DELIVERED FREE ON ORDERS OVER $45
+    </div>
+
+    <header class="sticky top-0 z-30 border-b border-[#342a28]/10 bg-[#fffdf8]/95 backdrop-blur">
+      <nav
+        aria-label="Main navigation"
+        class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 sm:px-8"
+      >
+        <a
+          href="#home"
+          class="group shrink-0 font-display text-[25px] tracking-[0.08em] transition-colors duration-200 hover:text-[#ff7e7e] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ff7e7e] sm:text-3xl"
+        >
+          MAISON <span class="font-light text-[#ff7e7e] transition-colors group-hover:text-[#342a28]">BLOOM</span>
+        </a>
+
+        <div class="hidden items-center gap-8 text-sm font-medium md:flex">
+          <a href="#shop" class="transition-colors hover:text-[#ff7e7e]">Shop all</a>
+          <a href="#ritual" class="transition-colors hover:text-[#ff7e7e]">Our ritual</a>
+          <a href="#story" class="transition-colors hover:text-[#ff7e7e]">Our story</a>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <a
+            href="#shop"
+            class="rounded-full bg-[#342a28] px-4 py-2.5 text-xs font-semibold text-white transition duration-200 hover:-translate-y-0.5 hover:bg-[#ff7e7e] hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff7e7e] sm:px-5 sm:text-sm"
+          >
+            Shop now <span aria-hidden="true">↗</span>
+          </a>
+          <button
+            id="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            class="grid size-10 place-items-center rounded-full border border-[#342a28]/15 md:hidden"
+          >
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" class="size-5 stroke-current" stroke-width="1.7">
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <div id="mobile-menu" class="hidden border-t border-[#342a28]/10 bg-[#fffdf8] px-5 py-4 md:hidden">
+        <div class="mx-auto flex max-w-7xl flex-col gap-4 text-4xl font-semi-bold">
+          <a href="#shop" class="hover:text-[#ff7e7e]">Shop all</a>
+          <a href="#ritual" class="hover:text-[#ff7e7e]">Our ritual</a>
+          <a href="#story" class="hover:text-[#ff7e7e]">Our story</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="mx-auto grid max-w-7xl items-center gap-10 px-5 py-12 sm:px-8 sm:py-16 lg:grid-cols-2 lg:gap-16 lg:py-20">
+        <div class="order-2 max-w-xl lg:order-1">
+          <p class="mb-5 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#c57945] sm:text-xs">
+            Feel-good skincare for your everyday
+          </p>
+          <h1 class="font-display text-[3.6rem] leading-[0.91] tracking-[-0.035em] sm:text-7xl lg:text-[5.5rem]">
+            Your daily<br />
+            dose of <span class="italic text-[#ff7e7e]">glow.</span>
+          </h1>
+          <p class="mt-6 max-w-md text-sm leading-7 text-[#6d5e56] sm:text-base">
+            Easy, feel-good essentials for soft, happy skin. Your morning ritual just got a little sunnier.
+          </p>
+          <div class="mt-8 flex flex-wrap items-center gap-4">
+            <a
+              href="#shop"
+              class="inline-flex items-center gap-3 rounded-full bg-[#ff7e7e] px-6 py-3.5 text-sm font-semibold text-[#342a28] transition duration-200 hover:-translate-y-1 hover:bg-[#ffa259] hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#342a28]"
+            >
+              Find your glow <span aria-hidden="true">→</span>
+            </a>
+            <span class="text-xs font-medium text-[#6d5e56]">Made for your kind of beautiful</span>
+          </div>
+          <div class="mt-10 flex items-center gap-3 text-xs text-[#6d5e56]">
+            <span class="flex -space-x-2" aria-hidden="true">
+              <span class="size-7 rounded-full border-2 border-[#fffdf8] bg-[#ffcb56]"></span>
+              <span class="size-7 rounded-full border-2 border-[#fffdf8] bg-[#ffa259]"></span>
+              <span class="size-7 rounded-full border-2 border-[#fffdf8] bg-[#ff7e7e]"></span>
+            </span>
+            Little rituals. Lots of love.
+          </div>
+        </div>
+
+        <div class="relative order-1 mx-auto w-full max-w-xl lg:order-2">
+          <div class="absolute -left-3 top-8 size-16 rounded-full bg-[#ffcb56] sm:-left-5 sm:size-24"></div>
+          <div class="absolute -right-2 bottom-6 size-20 rounded-full bg-[#ff7e7e] sm:-right-5 sm:size-28"></div>
+          <div class="relative h-[360px] overflow-hidden rounded-[48%_48%_28px_28px] bg-[#ffedb9] sm:h-[500px]">
+            <img
+              src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=1200&q=85"
+              alt="Woman enjoying a bright, sunlit skincare moment"
+              class="h-full w-full object-cover object-center"
+            />
+            <div class="absolute bottom-4 left-4 right-4 rounded-2xl bg-[#fffdf8]/95 p-4 shadow-lg backdrop-blur sm:bottom-6 sm:left-6 sm:right-6 sm:p-5">
+              <div class="flex items-center justify-between gap-4">
+                <div>
+                  <p class="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#c57945]">Your new morning must-have</p>
+                  <p class="mt-1 font-display text-2xl sm:text-3xl">Sunbeam SPF 50</p>
+                </div>
+                <span class="grid size-11 shrink-0 place-items-center rounded-full bg-[#ffcb56] text-xl" aria-hidden="true">☼</span>
+              </div>
+            </div>
+          </div>
+          <span class="absolute -right-1 top-5 rotate-12 font-display text-2xl italic text-[#c57945] sm:-right-6 sm:top-10 sm:text-3xl">shine on!</span>
+        </div>
+      </section>
+
+      <section id="shop" class="bg-[#ffedb9] px-5 py-16 sm:px-8 sm:py-20">
+        <div class="mx-auto max-w-7xl">
+          <div class="mb-9 flex flex-col gap-4 sm:mb-12 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#c57945]">The feel-good lineup</p>
+              <h2 class="mt-2 font-display text-5xl leading-none sm:text-6xl">Meet your new routine.</h2>
+            </div>
+            <p class="max-w-xs text-sm leading-6 text-[#6d5e56]">Three little everyday joys. One very happy skin day.</p>
+          </div>
+
+          <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="group overflow-hidden rounded-3xl bg-[#fffdf8] p-3 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+              <div class="relative h-64 overflow-hidden rounded-2xl bg-[#ffcb56] sm:h-72">
+                <img
+                  src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=900&q=85"
+                  alt="Sun care skincare product in warm sunlight"
+                  loading="lazy"
+                  class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+                <span class="absolute left-4 top-4 rounded-full bg-[#fffdf8] px-3 py-1.5 text-[10px] font-semibold uppercase tracking-wider">Daily essential</span>
+              </div>
+              <div class="flex items-start justify-between gap-3 px-2 pb-2 pt-5">
+                <div>
+                  <h3 class="font-display text-2xl">Sunbeam SPF 50</h3>
+                  <p class="mt-1 text-xs text-[#6d5e56]">Light daily sunscreen · 50 ml</p>
+                </div>
+                <span class="pt-1 text-sm font-semibold">$24</span>
+              </div>
+              <a href="#ritual" class="mx-2 mt-3 inline-flex items-center gap-2 pb-3 text-xs font-semibold transition-colors group-hover:text-[#c57945]">
+                Meet your sun care <span aria-hidden="true">→</span>
+              </a>
+            </article>
+
+            <article class="group overflow-hidden rounded-3xl bg-[#fffdf8] p-3 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+              <div class="relative h-64 overflow-hidden rounded-2xl bg-[#ffa259] sm:h-72">
+                <img
+                  src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=900&q=85"
+                  alt="Gentle face wash and skincare essentials"
+                  loading="lazy"
+                  class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+                <span class="absolute left-4 top-4 rounded-full bg-[#fffdf8] px-3 py-1.5 text-[10px] font-semibold uppercase tracking-wider">Soft &amp; sudsy</span>
+              </div>
+              <div class="flex items-start justify-between gap-3 px-2 pb-2 pt-5">
+                <div>
+                  <h3 class="font-display text-2xl">Cloud Nine Cleanser</h3>
+                  <p class="mt-1 text-xs text-[#6d5e56]">Gentle daily face wash · 150 ml</p>
+                </div>
+                <span class="pt-1 text-sm font-semibold">$18</span>
+              </div>
+              <a href="#ritual" class="mx-2 mt-3 inline-flex items-center gap-2 pb-3 text-xs font-semibold transition-colors group-hover:text-[#c57945]">
+                Meet your cleanser <span aria-hidden="true">→</span>
+              </a>
+            </article>
+
+            <article class="group overflow-hidden rounded-3xl bg-[#fffdf8] p-3 transition duration-300 hover:-translate-y-1 hover:shadow-xl sm:col-span-2 lg:col-span-1">
+              <div class="relative h-64 overflow-hidden rounded-2xl bg-[#ff7e7e] sm:h-72">
+                <img
+                  src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=900&q=85"
+                  alt="Moisturizing skincare cream for a daily routine"
+                  loading="lazy"
+                  class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+                <span class="absolute left-4 top-4 rounded-full bg-[#fffdf8] px-3 py-1.5 text-[10px] font-semibold uppercase tracking-wider">A hug for your skin</span>
+              </div>
+              <div class="flex items-start justify-between gap-3 px-2 pb-2 pt-5">
+                <div>
+                  <h3 class="font-display text-2xl">Dew Drop Moisturizer</h3>
+                  <p class="mt-1 text-xs text-[#6d5e56]">Daily face moisturizer · 50 ml</p>
+                </div>
+                <span class="pt-1 text-sm font-semibold">$26</span>
+              </div>
+              <a href="#ritual" class="mx-2 mt-3 inline-flex items-center gap-2 pb-3 text-xs font-semibold transition-colors group-hover:text-[#c57945]">
+                Meet your moisturizer <span aria-hidden="true">→</span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="ritual" class="px-5 py-16 sm:px-8 sm:py-20">
+        <div class="mx-auto grid max-w-7xl gap-10 rounded-[32px] bg-[#fff2e5] p-6 sm:p-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:p-14">
+          <div>
+            <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#c57945]">Three steps, zero stress</p>
+            <h2 class="mt-3 font-display text-5xl leading-[0.95] sm:text-6xl">Your feel-good<br />skin ritual.</h2>
+            <p class="mt-5 max-w-sm text-sm leading-7 text-[#6d5e56]">A simple little routine for the lovely skin you live in. Take it slow, make it yours, and don't forget the SPF.</p>
+            <a href="#shop" class="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-[#c57945] transition-colors hover:text-[#ff7e7e]">
+              Shop the routine <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <ol class="space-y-3">
+            <li class="flex items-center gap-4 rounded-2xl bg-[#fffdf8] p-4 sm:p-5">
+              <span class="grid size-11 shrink-0 place-items-center rounded-full bg-[#ffcb56] font-display text-2xl">01</span>
+              <div><h3 class="font-semibold">Wash away the day</h3><p class="mt-1 text-xs text-[#6d5e56]">Cloud Nine Cleanser, morning and night.</p></div>
+            </li>
+            <li class="flex items-center gap-4 rounded-2xl bg-[#fffdf8] p-4 sm:p-5">
+              <span class="grid size-11 shrink-0 place-items-center rounded-full bg-[#ffa259] font-display text-2xl">02</span>
+              <div><h3 class="font-semibold">Give your skin a drink</h3><p class="mt-1 text-xs text-[#6d5e56]">A little Dew Drop, whenever it needs a hug.</p></div>
+            </li>
+            <li class="flex items-center gap-4 rounded-2xl bg-[#fffdf8] p-4 sm:p-5">
+              <span class="grid size-11 shrink-0 place-items-center rounded-full bg-[#ff7e7e] font-display text-2xl">03</span>
+              <div><h3 class="font-semibold">Meet the sunshine</h3><p class="mt-1 text-xs text-[#6d5e56]">Finish your morning with Sunbeam SPF 50.</p></div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="story" class="px-5 pb-16 sm:px-8 sm:pb-20">
+        <div class="mx-auto max-w-3xl text-center">
+          <span class="font-display text-4xl text-[#ff7e7e]" aria-hidden="true">✳</span>
+          <p class="mt-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#c57945]">A note from Maison Bloom</p>
+          <h2 class="mt-3 font-display text-4xl leading-tight sm:text-5xl">Skincare should feel like a little kindness, not a complicated plan.</h2>
+          <p class="mx-auto mt-5 max-w-xl text-sm leading-7 text-[#6d5e56]">We make everyday essentials for real-life routines, made to bring a little more joy to the mirror and a little more sunshine to your day.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#342a28] px-5 py-8 text-[#fffdf8] sm:px-8">
+      <div class="mx-auto flex max-w-7xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <a href="#home" class="font-display text-2xl tracking-wider transition-colors hover:text-[#ffcb56]">MAISON BLOOM</a>
+        <p class="text-xs text-white/70">A little more glow, a little more you. © Maison Bloom 2026</p>
+        <a href="#home" class="text-xs font-medium transition-colors hover:text-[#ffcb56]">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuToggle.addEventListener("click", () => {
+        const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!isExpanded));
+        menuToggle.setAttribute("aria-label", isExpanded ? "Open navigation menu" : "Close navigation menu");
+        mobileMenu.classList.toggle("hidden", isExpanded);
+      });
+
+      mobileMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          menuToggle.setAttribute("aria-expanded", "false");
+          menuToggle.setAttribute("aria-label", "Open navigation menu");
+        });
+      });
+    </script>
+  </body>
+</html>
